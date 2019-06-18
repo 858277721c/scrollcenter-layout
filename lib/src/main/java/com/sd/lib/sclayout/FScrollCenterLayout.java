@@ -27,7 +27,10 @@ public class FScrollCenterLayout extends FrameLayout
 
     private View getTarget()
     {
-        return mTarget == null ? null : mTarget.get();
+        final View target = mTarget == null ? null : mTarget.get();
+        if (target == null)
+            mChildOffset = null;
+        return target;
     }
 
     /**
@@ -109,9 +112,10 @@ public class FScrollCenterLayout extends FrameLayout
                 {
                     if (mChildOffset != null && mChild != null)
                     {
-                        if (mChildOffset != mChild.getLeft())
+                        final int left = mChild.getLeft();
+                        if (mChildOffset != left)
                         {
-                            getScroller().scrollToX(mChild.getLeft(), mChildOffset, -1);
+                            getScroller().scrollToX(left, mChildOffset, -1);
                         }
                     }
                 }
