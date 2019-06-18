@@ -2,6 +2,7 @@
 [![](https://jitpack.io/v/zj565061763/scrollcenter-layout.svg)](https://jitpack.io/#zj565061763/scrollcenter-layout)
 
 # Demo
+![](https://github.com/zj565061763/scrollcenter-layout/blob/master/screenshot/scrollcenter_layout.gif?raw=true)
 
 ```java
 // 移动v到中心
