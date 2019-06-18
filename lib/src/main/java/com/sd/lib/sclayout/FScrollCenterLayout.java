@@ -75,7 +75,6 @@ public class FScrollCenterLayout extends FrameLayout
             if (getScroller().isFinished())
             {
                 getScroller().scrollToX(start, mChildOffset, -1);
-                ViewCompat.postInvalidateOnAnimation(this);
             }
         }
     }
@@ -90,6 +89,7 @@ public class FScrollCenterLayout extends FrameLayout
                 @Override
                 public void onScrollerStart()
                 {
+                    ViewCompat.postInvalidateOnAnimation(FScrollCenterLayout.this);
                 }
 
                 @Override
@@ -112,7 +112,6 @@ public class FScrollCenterLayout extends FrameLayout
                         if (mChildOffset != mChild.getLeft())
                         {
                             getScroller().scrollToX(mChild.getLeft(), mChildOffset, -1);
-                            ViewCompat.postInvalidateOnAnimation(FScrollCenterLayout.this);
                         }
                     }
                 }
