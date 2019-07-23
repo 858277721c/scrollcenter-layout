@@ -1,8 +1,9 @@
 package com.sd.lib.scrollcenter_layout.demo;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.sd.lib.sclayout.FScrollCenterLayout;
 

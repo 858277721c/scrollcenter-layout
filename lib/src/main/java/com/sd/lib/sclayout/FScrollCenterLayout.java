@@ -1,11 +1,12 @@
 package com.sd.lib.sclayout;
 
 import android.content.Context;
-import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.FrameLayout;
+
+import androidx.core.view.ViewCompat;
 
 import java.lang.ref.WeakReference;
 
